@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLCEMAT Portail</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://imgur.com/gC4nTp5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu-icon {
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid #444;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+    .btn-partnership {
+      display: inline-block;
+      margin: 1.5rem auto;
+      padding: 0.8rem 1.5rem;
+      background-color: #00f5d4;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-partnership:hover {
+      background-color: #00c9aa;
+    }
+    iframe {
+      margin-top: 2rem;
+      width: 90%;
+      height: 300px;
+      max-width: 600px;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OLCEMAT Portail</h1>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+  <nav id="menu">
+    <a href="https://mathiasko-bv.github.io/OLCEMAT-SHOP/" target="_blank">🛍️ OLCEMAT Shop</a>
+    <a href="#">🌍 VisionTech World</a>
+    <a href="#">👗 Les Stylistes du Monde</a>
+  </nav>
+
+  <section>
+    <h2>Bienvenue sur le portail OLCEMAT</h2>
+    <p>OLCEMAT est une initiative technologique et créative dédiée à l'inspiration, à l'apprentissage et à l'entrepreneuriat. L'idée est née du besoin d'encourager les jeunes à concrétiser leurs rêves à travers la technologie, la mode, l'éducation et les affaires.</p>
+    <p>Le projet repose sur la collaboration entre les communautés et l'accès libre à des outils numériques. Que vous soyez passionné de stylisme, de création de contenu, de technologie ou de commerce en ligne, vous avez votre place ici.</p>
+
+    <a class="btn-partnership" href="#">🤝 Proposer un partenariat</a>
+
+    <h3>🎵 Nos playlists YouTube</h3>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLz_RdtDoC9OZ5FSCFyASVds1uPCOj2YvZ" allowfullscreen></iframe>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
+
